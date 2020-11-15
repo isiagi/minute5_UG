@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom"
+import {BrowserRouter as Router,Link,Switch,Route} from "react-router-dom"
 import Button from "react-bootstrap/Button";
-import Login from "./firstSection/Login";
+import LoginContainer from "./firstSection/LoginContainer";
 import Register from "./firstSection/Register";
 import "./Home.css";
+
 
 export class Home extends Component {
   render() {
@@ -18,10 +19,11 @@ export class Home extends Component {
             <Link to="/login"><Button>Login</Button></Link>
           </ul>
         </nav>
-        <Route path="/login" component={Login} />
+        <Route path="/login" component={LoginContainer} />
         <Route path="/register" component={Register}/>
       </div>
       </Router>
+
     );
   }
 }

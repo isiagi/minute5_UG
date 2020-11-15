@@ -9,7 +9,7 @@ class Register extends React.Component {
 
         <Form>
         <Form.Group controlId="formBasicFullName">
-            <Form.Label>Full Name</Form.Label>
+            <Form.Label>Username</Form.Label>
             <Form.Control type="text" placeholder="Enter Full Name" />
           </Form.Group>
 
