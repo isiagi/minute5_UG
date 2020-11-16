@@ -4,11 +4,12 @@ import Button from "react-bootstrap/Button";
 import LoginContainer from "./firstSection/LoginContainer";
 import Register from "./firstSection/Register";
 import "./Home.css";
-
+import Category from "./Categories/Category"
 
 export class Home extends Component {
   render() {
     return (
+      <>
       <Router>
       <div>
         <nav>
@@ -23,6 +24,8 @@ export class Home extends Component {
         <Route path="/register" component={Register}/>
       </div>
       </Router>
+      <Category/>
+      </>
 
     );
   }
