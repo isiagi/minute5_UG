@@ -2,3 +2,20 @@
     display: flex;
     
 }
+.round-image{
+    border-color: green;
+    border-width: 5px;
+    border-style: none;
+    border-radius: 100%;
+}
+
+ /* button{
+     border:1px solid black 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30% !important;
+    background: url(../images/oranges.jpg);
+    background-size: cover;
+   
+}  */
+

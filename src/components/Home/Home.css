@@ -7,3 +7,6 @@ nav{
 nav>ul>a>Button{
     margin:12px 10px;
 }
+h3>img{
+    height: 35px;
+}

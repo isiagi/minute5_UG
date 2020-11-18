@@ -1,32 +1,37 @@
 import React, { Component } from "react";
-import {BrowserRouter as Router,Link,Switch,Route} from "react-router-dom"
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import LoginContainer from "./firstSection/LoginContainer";
 import Register from "./firstSection/Register";
 import "./Home.css";
-import Category from "./Categories/Category"
-
+import Category from "./Categories/Category";
+import Logo from "./firstSection/Logo";
 export class Home extends Component {
   render() {
     return (
       <>
-      <Router>
-      <div>
-        <nav>
-          <h3>what do you need</h3>
-          <ul>
-           <Link to="/register"><Button>Register</Button></Link>
+        <Router>
+          <div>
+            <nav>
+              <h3>what do you need</h3>
+              <ul>
+                <Link to="/register">
+                  <Button>Register</Button>
+                </Link>
 
-            <Link to="/login"><Button>Login</Button></Link>
-          </ul>
-        </nav>
-        <Route path="/login" component={LoginContainer} />
-        <Route path="/register" component={Register}/>
-      </div>
-      </Router>
-      <Category/>
+                <Link to="/login">
+                  <Button>Login</Button>
+                </Link>
+              </ul>
+            </nav>
+            <Route path="/login" component={LoginContainer} />
+            <Route path="/register" component={Register} />
+          </div>
+        </Router>
+        <Logo />
+
+        <Category />
       </>
-
     );
   }
 }
