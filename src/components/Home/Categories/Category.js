@@ -1,6 +1,7 @@
 import FormFileInput from "react-bootstrap/esm/FormFileInput";
 import React, { Component } from "react";
 import oranges from "../images/oranges.jpg";
+import minute5_logo from "../images/minute5_logo.png";
 import "./Category.css";
 import { Container } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
@@ -10,7 +11,7 @@ class Category extends Component {
     const categories = [
       {
         description: "Fruits",
-        img: `${oranges}`,
+        img: `${minute5_logo}`,
       },
       {
         description: "Vegetables",
